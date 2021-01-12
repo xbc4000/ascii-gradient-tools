@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ascii Gradient</title>
+	</head>
+	<body>
+		<pre id="test"></pre>
+
+		<script type="text/javascript" src="ascii-gradient.js"></script>
+		<script type="text/javascript">
+			var width = 40;
+			var height = 30;
+			var palette = " .,:;xX&@";
+			var type = "radial";
+			var data = [20,15,20];
+			document.getElementById("test").innerText = generateGradient(width, height, palette, type, data);
+		</script>
+	</body>
+</html>
